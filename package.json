@@ -2,7 +2,7 @@
   "name": "archive-fever-bot",
   "version": "1.0.0",
   "description": "",
-  //"main": "bot.js",
+  "main": "bot.js",
   "scripts": {
     "start": "node bot.js",
     "start-live": "nodemon bot.js",
