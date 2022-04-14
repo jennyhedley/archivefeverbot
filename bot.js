@@ -12,8 +12,6 @@ const stream = T.stream("statuses/filter", { follow: "1513305478897750017" });
 stream.on("tweet", reply);
 
 function reply(msg) {
-  console.log("Reply event");
-
   const tweet = {
     status: getTweet(),
   };
