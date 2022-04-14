@@ -2,7 +2,7 @@
   "name": "archive-fever-bot",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "bot.js",
   "scripts": {
     "start": "node bot.js",
     "start-live": "nodemon bot.js",
@@ -16,7 +16,6 @@
   "license": "ISC",
   "dependencies": {
     "dotenv": "^16.0.0",
-    "node-schedule": "^2.1.0",
     "tracery-grammar": "^2.7.4",
     "twit": "^2.2.11"
   },
