@@ -1,0 +1,26 @@
+{
+  "name": "archive-fever-bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node bot.js",
+    "start-live": "nodemon bot.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "archive",
+    "writing"
+  ],
+  "author": "Jenny Hedley",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.0.0",
+    "node-schedule": "^2.1.0",
+    "tracery-grammar": "^2.7.4",
+    "twit": "^2.2.11"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
