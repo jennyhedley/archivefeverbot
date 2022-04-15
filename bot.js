@@ -5,7 +5,6 @@ const app = express();
 
 app.set("port", process.env.PORT || 5000);
 
-/*
 //For avoiding Heroku $PORT error
 app
   .get("/", function (request, response) {
@@ -18,7 +17,6 @@ app
       app.get("port")
     );
   });
-  */
 
 require("dotenv").config();
 const cron = require("node-cron");
