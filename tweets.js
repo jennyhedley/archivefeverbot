@@ -121,6 +121,8 @@ const grammar = tracery.createGrammar({
     "After a week, Mom, resolving to finish, dragged her bag along the final hole in near exhaustion.",
     "Ever the straight-shooter, she placed her ball carefully on the tee as though lighting a fuse.",
     "Dad handed each of us a club and ball, and told us, All you want to do is have a good time today.",
+    "She polished her pre-swing waggle: a sassy wiggle of her extraordinary heart-shaped rear.",
+    "Dad was there too——they were last minute guests of someone who knew Someone.",
   ],
   long: [
     "By age fourteen she'd grown to hate her too short, too-freckled, too-bosomy, too far-sighted, too-bookish, too red-headed self.",
@@ -135,9 +137,7 @@ const grammar = tracery.createGrammar({
     "As a kid, I thought I knew everything about Mom until I discovered her habit of swinging: on the lawn, living room, bedrooms, hallway, bathroom, and kitchen.",
     "Other than a club, she'd use a rake, a broom, a stick, a spatula, a baseball bat——whatever she could grip her hands on.",
     "She'd strike at plastic Wiffle balls, lemons, avocados, magnolia seeds, Ping-Pong balls, the dog's old tennis balls, Dad's wadded up socks.",
-
     "Over the flap of wet clothes tossing in the dryer, I could make out the repetitive sound of our lawn being gutted, piece by piece.",
-
     "I'd hear the roar of the upright Hoover approaching my bedroom door, knowing she was grooving a smooth path to an electric putting machine.",
     "She'd make a great whipping, swishing noise with a club that could shake a lamp, unfurl curtains, or rattle a tree.",
     "Swinging in front of her full-sized bedroom mirror, wearing only a lacy Maidenform bra and silk half-slip.",
@@ -176,7 +176,6 @@ const grammar = tracery.createGrammar({
     "He'd stand with a club in his hands, dislodging Wiffle balls, like ripe fruit, from the trees.",
     "Renewed, Mom would return to the kitchen to dish out bowls of rocky road ice cream for each of us.",
     "She'd take a stance in the mud or from behind a prickly tree, or toss a pinch of grass in the air, or get down on her hands and knees to sight a line.",
-
     "On the greens, whenever she sunk a long putt, she'd prance on her toes while retrieving the ball.",
     "Her hair, piled in wide equally spaced curls on top of her head, bounced like a coiled Slinky.",
     "Mom's gutsy attitude landed her in the heart of controversy, whether running PTA meetings or staking a claim on the course.",
@@ -224,10 +223,8 @@ const grammar = tracery.createGrammar({
     "A ball that rolled on the ground was no less than one that flew in the air—they both had a chance to put you closer to the hole.",
     "Most of all over that first summer on the course, Dad wanted us to realize that the world wasn't going to end with one miss-hit.",
     "Arnold Palmer eyed Mom as she trotted by him at the crowded cocktail party during pre-tournament festivities for the Bob Hope Desert Classic tournament.",
-    "Dad was there too——they were last minute guests of someone who knew Someone.",
     "This was during the days of martinis, frosted pink ice lipstick, Zippo lighters, plastic bauble beads, and men's gold rope chains.",
     "Mom wore a pink knit dress, cinched at the waist with a wide gold belt and gold hoop earrings.",
-
     "Never one for polyester and chains, he preferred to charm her with masterful footwork that kept her on her toes.",
     "Dad didn't mind Arnold swing dancing so close to Mom in the shimmering night, saying, I was the real winner that night. I got to go home with the prize: your mom.",
     "Tan and dazzlingly handsome in dark suit, white shirt, and tie, he stepped up behind her like a prizefighter and wrapped his burly forearms around her waist.",
@@ -242,7 +239,6 @@ const grammar = tracery.createGrammar({
     "She felt it interfered with her swing; she claimed that she was allergic to the elastic in bras and panties.",
     "To get an idea of how far she'd go, she refused to ride in the golf cart with her latest husband, an insurance agent. Instead, she'd walk ahead of him.",
     "There'd she be, every afternoon, on the practice green, bending over to line up putts, or taking a wide stance on the range, under the watchful eyes of a pro.",
-    "She polished her pre-swing waggle: a sassy wiggle of her extraordinary heart-shaped rear.",
     "When men passed by, they'd croon to each other, If this is my dying day, then please, lord, let her be my End Joys.",
     "Mom appreciated a good swing (though the few times we saw End Joys, Mom forbade Sister and me to grow up looking like her).",
     "Before hearing of End Joys I didn't know that people were thought of in sections like fryer chickens-arms, legs, thighs, hips, hindquarters, breasts.",

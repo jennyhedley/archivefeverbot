@@ -1,6 +1,7 @@
 console.log("Archive fever bot is starting");
 
 require("dotenv").config();
+const cron = require("node-cron");
 const Twit = require("twit");
 const config = require("./config");
 
@@ -8,8 +9,37 @@ const T = new Twit(config);
 
 const getTweet = require("./tweets");
 
-const stream = T.stream("statuses/filter", { follow: "1513305478897750017" });
-stream.on("tweet", reply);
+// Tweet once a day at 3pm
+cron.schedule("0 15 * * *", () => {
+  tweetIt();
+});
+
+// Listen and reply to AnneBotWallace at 4.59am 9.59am and 4.59pm
+cron.schedule("59 4,9,16 * * *", () => {
+  //reply(msg);
+  streamReply();
+});
+
+function tweetIt() {
+  const tweet = {
+    status: getTweet(),
+  };
+
+  T.post("statuses/update", tweet, tweeted);
+
+  function tweeted(err, data, response) {
+    if (err) {
+      console.log(err);
+    } else {
+      console.log("It worked");
+    }
+  }
+}
+
+function streamReply() {
+  const stream = T.stream("statuses/filter", { follow: "1513305478897750017" });
+  stream.on("tweet", reply);
+}
 
 function reply(msg) {
   const tweet = {
