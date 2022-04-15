@@ -1,7 +1,6 @@
 console.log("Archive fever bot is starting");
 const PORT = process.env.PORT || 80;
 
-app.listen(PORT, () => console.log(`Server is listening on port ${PORT}...`));
 require("dotenv").config();
 const cron = require("node-cron");
 const Twit = require("twit");
