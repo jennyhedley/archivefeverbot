@@ -2,7 +2,6 @@ console.log("Archive fever bot is starting");
 
 const express = require("express");
 const app = express();
-
 app.set("port", process.env.PORT || 5000);
 
 //For avoiding Heroku $PORT error
@@ -18,28 +17,37 @@ app
     );
   });
 
+//prevent idle with 20 minute ping - haven't tested
+// using http://kaffeine.herokuapp.com/ wit 16:45 GMT bedtime
+// const http = require("http");
+// setInterval(function() {
+//     http.get("http://archivefeverbot.herokuapp.com");
+// }, 1000 * 60 * 20); // every 20 minutes
+
 require("dotenv").config();
 const cron = require("node-cron");
 const Twit = require("twit");
 const config = require("./config");
-
 const T = new Twit(config);
-
 const getTweet = require("./tweets");
-
 const stream = T.stream("statuses/filter", { follow: "1513305478897750017" });
 stream.on("tweet", reply);
 
 /*
-// Tweet once a day at 3pm
-cron.schedule("0 15 * * *", () => {
-  tweetIt();
-});
-
 // Listen and reply to AnneBotWallace at 4.59am 9.59am and 4.59pm
 cron.schedule("59 4,9,16 * * *", () => {
   //reply(msg);
   streamReply();
+});
+
+function streamReply() {
+  const stream = T.stream("statuses/filter", { follow: "1513305478897750017" });
+  stream.on("tweet", reply);
+}
+
+// Tweet once a day at 3pm
+cron.schedule("0 15 * * *", () => {
+  tweetIt();
 });
 
 function tweetIt() {
@@ -56,11 +64,6 @@ function tweetIt() {
       console.log("It worked");
     }
   }
-}
-
-function streamReply() {
-  const stream = T.stream("statuses/filter", { follow: "1513305478897750017" });
-  stream.on("tweet", reply);
 }
 */
 
