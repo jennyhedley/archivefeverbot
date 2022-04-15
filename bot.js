@@ -1,5 +1,6 @@
 console.log("Archive fever bot is starting");
-// const PORT = process.env.PORT || 80;
+// const PORT = process.env.PORT || 80; 5000?
+bot.set("port", process.env.PORT || 80);
 
 require("dotenv").config();
 const cron = require("node-cron");
