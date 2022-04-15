@@ -16,6 +16,7 @@
   "license": "ISC",
   "dependencies": {
     "dotenv": "^16.0.0",
+    "express": "^4.17.3",
     "node-cron": "^3.0.0",
     "tracery-grammar": "^2.7.4",
     "twit": "^2.2.11"
