@@ -44,9 +44,10 @@ function streamReply() {
   const stream = T.stream("statuses/filter", { follow: "1513305478897750017" });
   stream.on("tweet", reply);
 }
+*/
+// Tweet once a day at 4 GST (local 2pm)
 
-// Tweet once a day at 3pm
-cron.schedule("0 15 * * *", () => {
+cron.schedule("0 4 * * *", () => {
   tweetIt();
 });
 
@@ -65,7 +66,6 @@ function tweetIt() {
     }
   }
 }
-*/
 
 function reply(msg) {
   const tweet = {
@@ -78,7 +78,8 @@ function reply(msg) {
   T.post(
     "statuses/update",
     {
-      status: "@" + name + " " + tweet.status,
+      //status: "@" + name + " " + tweet.status, //get rid of the @ to delete duplicate tweet
+      status: tweet.status,
       in_reply_to_status_id: id,
     },
     function (err, replyMsg) {
