@@ -44,7 +44,7 @@ function streamReply() {
   const stream = T.stream("statuses/filter", { follow: "1513305478897750017" });
   stream.on("tweet", reply);
 }
-*/
+
 // Tweet once a day at 4 GST (local 2pm)
 
 cron.schedule("0 4 * * *", () => {
@@ -66,6 +66,7 @@ function tweetIt() {
     }
   }
 }
+*/
 
 function reply(msg) {
   const tweet = {
