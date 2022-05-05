@@ -46,6 +46,7 @@ function streamReply() {
 }
 
 // Tweet once a day at 4 GST (local 2pm)
+//when I enabled this, the reply function no longer happenned
 
 cron.schedule("0 4 * * *", () => {
   tweetIt();
@@ -79,8 +80,7 @@ function reply(msg) {
   T.post(
     "statuses/update",
     {
-      //status: "@" + name + " " + tweet.status, //get rid of the @ to delete duplicate tweet
-      status: tweet.status,
+      status: "@" + name + " " + tweet.status,
       in_reply_to_status_id: id,
     },
     function (err, replyMsg) {
